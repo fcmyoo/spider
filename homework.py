@@ -12,6 +12,7 @@ with open(u'E:/pyweb/exceltest/传智播客/爬虫/homework/index.html', 'r') as
     stars = soup.select('body > div > div > div.col-md-9 > div > div > div > div.ratings > p:nth-of-type(2)')
     # star=soup.find_all('span', class_='glyphicon-star')
 for title, price, content, review, star, image in zip(titles, prices, contents, reviews, stars, images):
+
     data = {
         'title': title.get_text(),
         'price': price.get_text()[1:],
