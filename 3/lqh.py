@@ -77,7 +77,7 @@ def get_main():
 
 
 
-# #
+
 if __name__ == '__main__':
     urls = url_s()
     for url in urls:
